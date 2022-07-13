@@ -5,11 +5,17 @@
     font-family: arial, sans-serif;
 }
 
-.topo-principal-menu {
-    margin: 15px;
+.topo-principal {
     display: flex;
-    align-content: space-around;
+    align-items: center;
     justify-content: flex-end;
+    padding: 6px;
+    height: 48px;
+    font-size: 14px;
+}
+
+.topo-principal-menu {
+    display: flex;
 }
 
 .topo-menu {
@@ -29,6 +35,7 @@
 .foto-perfil {
     background-size: 32px 32px;
     border-radius: 50%;
+    padding: 4px;
     display: block;
     position: relative;
     height: 32px;
@@ -40,9 +47,8 @@
 }
 
 .topo-menu-menu {
-    line-height: 20px;
-    font-size: 13px;
-    color: rgba(0,0,0,.87);
+    color: #202124;
+
 }
 
 .topo-menu-icon {
