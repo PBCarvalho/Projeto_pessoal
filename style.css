@@ -62,11 +62,3 @@
     display: flex;
     align-items: flex-end;
 }
-
-.logon-container img {
-    height: 80%;
-}
-
-.logon-container .logon-container-compartilhar {
-    height: auto;
-}
