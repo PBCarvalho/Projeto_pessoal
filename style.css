@@ -1,9 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
+    
     text-decoration: none;
     font-family: arial, sans-serif;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    min-width: 400px;
+}
+
+html {
+    display: block;
 }
 
 .topo-principal {
@@ -49,7 +60,6 @@
 
 .topo-menu-menu {
     color: #202124;
-
 }
 
 .topo-menu-icon {
@@ -62,7 +72,10 @@
 
 .logon {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 20px;
 }
 
 .logon-container {
@@ -70,14 +83,24 @@
     align-items: flex-end;
 }
 
-.main-container {
-    width: auto;
-    height: 46px;
-    padding: 20px;
-    text-align: center;
+.section-container {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 540px;
+    height: 48px;
+    padding: 20px 0 20px 0;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
 }
 
 .container-keyboard {
@@ -133,17 +156,20 @@
     flex-grow: 1;
     flex-shrink: 1;
     width: 100%;
-    height: 20vw;
+    height: 220px;
     font-size: 13px;
+    color: #4d5156;
 
 }
 
 .main-footer {
     display: flex;
+    align-items: center;
     border-bottom: 1px solid #dadce0;
     padding: 15px 30px;
     color: #70757a;
     font-size: 15px;
+    height: 46px;
 }
 
 .footer-final {
