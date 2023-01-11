@@ -84,7 +84,7 @@ body {
 .movie-category {
     font-size: 20px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-transform: capitalize;
 }
 
@@ -95,4 +95,63 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    display: flex;
+}
+
+.movie-container::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-category::-webkit-scrollbar {
+    display: none;
+}
+
+.movie {
+    flex: 0 0 auto;
+    width: 24%;
+    height: 200px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.movie img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.movie p {
+    text-transform: capitalize;
+    height: 20px;
+    overflow: hidden;
+}
+
+.pre-btn,
+.next-btn {
+    position: absolute;
+    height: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5vw;
+    background: #181818;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+}
+
+.pre-btn:hover,
+.next-btn:hover {
+    opacity: 1;
+}
+.pre-btn {
+    left: -2.5vw;
+}
+.next-btn {
+    right: -2.5vw;
+}
+.pre-btn img,
+.next-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
