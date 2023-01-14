@@ -99,6 +99,8 @@ body{
 }
 .divisao-superior-esquerda-3{
     height: 50px;
+    
+    display: flex;
 }
 .numero{
     width: 30px;
