@@ -33,10 +33,10 @@ header {
 }
 
 .slider-item {
-    width: 100vw;
+    width: 100%;
     height: inherit;
     background-position: center;
-    background-size: cover;
+    background-size: cover;;
 }
 
 .slider-controls {
@@ -50,10 +50,12 @@ header {
 }
 
 .slider-control {
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     cursor: pointer;
+}
+
+.slider-controls img {
+    width: 100%;
 }
