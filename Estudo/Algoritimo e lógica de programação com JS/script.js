@@ -5,35 +5,22 @@
     divisão e resto da divisão
 */
 
-alert('Calculating two numbers')
+alert('Calculating two numbers');
 
 let numberOne = prompt('Write a number: ');
 let numberTwo = prompt('Write other number: ');
 
-numberOne = Number(numberOne)
-numberTwo = Number(numberTwo)
+numberOne = Number(numberOne);
+numberTwo = Number(numberTwo);
 
-let option = prompt('Which operation? (+, -, *, / or %)')
+const sum = numberOne + numberTwo;
+const sub = numberOne - numberTwo;
+const mult = numberOne * numberTwo;
+const div = numberOne / numberTwo;
+const rest = numberOne % numberTwo;
 
-let sum;
-
-switch(option) {
-    case '+':
-        sum = numberOne + numberTwo;
-        break;
-    case '-':
-        sum = numberOne - numberTwo;
-        break;
-    case '*':
-        sum = numberOne * numberTwo;
-        break;
-    case '/':
-        sum = numberOne / numberTwo;
-        break;
-    case '%':
-        sum = numberOne % numberTwo;
-        break;
-    default:
-        alert('Opção inválida')
-}
-alert('Result of the calc is: ' + sum)
+alert('Soma: ' + sum);
+alert('Subtração: ' + sub);
+alert('Multiplicação: ' + mult);
+alert('Divisão: ' + div);
+alert('Resto da divisão: ' + rest);
