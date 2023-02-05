@@ -15,7 +15,7 @@
     nome do aluno e a nota.
 */
 
-let aluno = prompt('Nome do aluno:');
+let studant = prompt('Nome do aluno:');
 
 alert('Informe as notas!');
 
@@ -30,7 +30,7 @@ thirdNote = Number(thirdNote);
 let media = (firstNote + seccondNote + thirdNote) / 3;
 
 if(media >= 6) {
-    alert('Parabéns '+ aluno +', você foi aprovado com média '+ media);
+    alert('Parabéns '+ studant +', você foi aprovado com média '+ media);
 } else {
     alert(aluno +', infelizmente você não passou, ficou com média '+ media +'. Mas anime-se, estude para se sair bem na recuperação!');
 };
