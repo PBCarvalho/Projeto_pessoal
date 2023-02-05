@@ -1,26 +1,36 @@
 /*
-    Capturar 2 números
-    e fazer as operações matemáticas
-    de soma, subtração, multiplicação
-    divisão e resto da divisão
+    Solicitar o nome do aluno e as 3 notas
+    do bimestre, calcular a média daquele aluno.
+
+    Média 6
+
+    Se o aluno passou no bimestre, dar os
+    parabéns.
+
+    Se o aluno não passou no bimestre,
+    motivar o aluno a dar seu melhor na prova de 
+    recuperação.
+
+    Em ambos os casos, mostre uma mensagem com o
+    nome do aluno e a nota.
 */
 
-alert('Calculating two numbers');
+let aluno = prompt('Nome do aluno:');
 
-let numberOne = prompt('Write a number: ');
-let numberTwo = prompt('Write other number: ');
+alert('Informe as notas!');
 
-numberOne = Number(numberOne);
-numberTwo = Number(numberTwo);
+let firstNote = prompt('Primeira nota: ');
+let seccondNote = prompt('Segunda nota: ');
+let thirdNote = prompt('Terceira nota:  ');
 
-const sum = numberOne + numberTwo;
-const sub = numberOne - numberTwo;
-const mult = numberOne * numberTwo;
-const div = numberOne / numberTwo;
-const rest = numberOne % numberTwo;
+firstNote = Number(firstNote);
+seccondNote = Number(seccondNote);
+thirdNote = Number(thirdNote);
 
-alert('Soma: ' + sum);
-alert('Subtração: ' + sub);
-alert('Multiplicação: ' + mult);
-alert('Divisão: ' + div);
-alert('Resto da divisão: ' + rest);
+let media = (firstNote + seccondNote + thirdNote) / 3;
+
+if(media >= 6) {
+    alert('Parabéns '+ aluno +', você foi aprovado com média '+ media);
+} else {
+    alert(aluno +', infelizmente você não passou, ficou com média '+ media +'. Mas anime-se, estude para se sair bem na recuperação!');
+};
