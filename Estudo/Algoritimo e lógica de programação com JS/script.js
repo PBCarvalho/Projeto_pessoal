@@ -27,10 +27,10 @@ firstNote = Number(firstNote);
 seccondNote = Number(seccondNote);
 thirdNote = Number(thirdNote);
 
-let media = (firstNote + seccondNote + thirdNote) / 3;
+let avarage = (firstNote + seccondNote + thirdNote) / 3;
 
-if(media >= 6) {
-    alert('Parabéns '+ studant +', você foi aprovado com média '+ media);
+if(avarage >= 6) {
+    alert('Parabéns '+ studant +', você foi aprovado com média '+ avarage);
 } else {
-    alert(aluno +', infelizmente você não passou, ficou com média '+ media +'. Mas anime-se, estude para se sair bem na recuperação!');
+    alert(studant +', infelizmente você não passou, ficou com média '+ avarage +'. Mas anime-se, estude para se sair bem na recuperação!');
 };
