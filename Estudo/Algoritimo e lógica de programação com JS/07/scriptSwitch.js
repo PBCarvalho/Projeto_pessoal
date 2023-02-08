@@ -37,6 +37,6 @@ while(option != 3) {
             alert("Aplicação está sendo encerrada!")
             break;
         default:
-            alert("Option invalid!")
+            alert("Opção inválida!")
     }
 }

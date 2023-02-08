@@ -31,7 +31,6 @@ let patients = [
     }
 ];
 
-
 let patientList = []
 
 for(let patient of patients) {

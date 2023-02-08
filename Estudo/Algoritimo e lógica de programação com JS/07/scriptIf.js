@@ -33,6 +33,6 @@ while(option != 3) {
     } else if(option == 3) {
         alert("Sair")
     } else {
-        alert("Option invalid!")
+        alert("Opção inválida!")
     }
 }
